@@ -1,0 +1,15 @@
+1771475701061	geckodriver	INFO	Listening on 127.0.0.1:65023
+1771475704272	mozrunner::runner	INFO	Running command: "C:\\Users\\bhash\\.cache\\selenium\\firefox\\win64\\147.0.4\\firefox.exe" "--marionette" "--remote-debuggin ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bhash\\AppData\\Local\\Temp\\rust_mozprofileFVHCYU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1771475705095	Marionette	INFO	Marionette enabled
+1771475705271	Marionette	INFO	Listening on port 65033
+Read port: 65033
+WebDriver BiDi listening on ws://127.0.0.1:65024
+1771475705374	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: [Exception... "Favicon at "https://rahulshettyacademy.com/AutomationPractice/images/rs_logo.png" is too large."  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource:///modules/FaviconLoader.sys.mjs :: decodeImage :: line 85"  data: no]
+JavaScript error: moz-src:///browser/components/search/SearchOneOffs.sys.mjs, line 392: TypeError: aEngine.getIconURL is not a function
+1771475749530	Marionette	INFO	Stopped listening on port 65033
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.

@@ -1,0 +1,216 @@
+1. A project requires executing the same test with 50 different sets of input data stored in Excel. Which framework approach is most suitable?
+A) Modular
+B) Library
+C) Data-Driven CORRECT
+D) Keyword-Driven
+
+
+2. Your team wants non-technical testers to design test cases using business-level actions like 'Login', 'Add to Cart', and 'Checkout'. Which framework should you suggest?
+A) Modular
+B) Keyword-Driven CORRECT
+C) Library
+D) Unit Testing
+
+
+3. The login functionality is used in 120 test cases. A recent UI change requires updating only one common function instead of all scripts. Which framework principle supports this?
+A) Hard Coding
+B) Reusability via Library Framework CORRECT
+C) Manual Testing
+D) Random Execution
+
+
+4. A framework uses reusable functions, external test data, and keyword mapping together. What type of framework is this?
+A) Modular
+B) Data-Driven
+C) Hybrid CORRECT
+D) Waterfall
+
+
+5. A team stores all test steps in Excel with columns like Step, Object, Action, and Data. The driver script reads and executes them dynamically. This is an example of:
+A) Keyword-Driven Framework CORRECT
+B) Modular Framework
+C) Smoke Testing
+D) Unit Framework
+
+
+Case Study 1:
+An e-commerce automation project has 500 test cases. The team faces issues with code duplication and maintenance overhead. They decide to create reusable functions for common operations.
+Which framework improvement are they implementing?
+A) Data-Driven
+B) Modular
+C) Library CORRECT
+D) BDD
+
+
+Case Study 2:
+A banking project needs the same transaction test executed for multiple customer roles stored in a database. Developers do not want to modify scripts for new roles.
+Which framework will solve this efficiently?
+A) Library
+B) Data-Driven CORRECT
+C) Modular
+D) Manual
+
+
+Case Study 3:
+A framework initially designed as modular is now difficult to scale. The team decides to integrate external data sources and reusable utilities.
+What does the framework become?
+A) Keyword-Driven
+B) Hybrid CORRECT
+C) Unit-Based
+D) Static
+
+
+Case Study 4:
+Business analysts want to contribute to automation without coding knowledge. The framework team introduces a keyword sheet where each business action maps to a function.
+Which challenge might arise?
+A) Increased execution speed
+B) Complex initial setup and maintenance CORRECT
+C) No scalability
+D) Reduced reusability
+
+
+Case Study 5:
+A company wants maximum flexibility, reusability, scalability, and data handling capabilities in one framework.
+Which is the best choice?
+A) Modular only
+B) Library only
+C) Data-Driven only
+D) Hybrid Framework CORRECT
+
+
+1. In a modular framework, test scripts are mainly divided based on:
+A) Test data
+B) Application modules CORRECT
+C) Test cases priority
+D) Execution time
+
+________________________________________
+2. What is a key advantage of a modular framework?
+A) No need for functions
+B) High duplication of code
+C) Code reusability CORRECT
+
+________________________________________
+3. In modular framework, if login functionality changes, you mainly update:
+A) All test cases
+B) Test data file
+C) Login module only CORRECT
+D) Execution report
+
+________________________________________
+4. Which of the following is a limitation of modular framework?
+A) Difficult to maintain
+B) Limited scalability for large projects CORRECT
+C) No separation of code
+D) Cannot handle automation
+
+5. Library framework is an extension of:
+A) Data-driven framework
+B) Hybrid framework
+C) Modular framework CORRECT
+D) BDD framework
+
+________________________________________
+6. In library framework, commonly reusable functions are stored in:
+A) Test report
+B) External library files CORRECT
+C) Test cases
+D) Config files
+
+________________________________________
+7. Which feature makes library framework better than modular framework?
+A) No function usage
+B) Reusable common functions CORRECT
+C) No folder structure
+D) Hard coding data
+
+________________________________________
+8. A login() reusable function stored in a common file is an example of:
+A) Data-driven approach
+B) Library concept CORRECT
+C) Keyword mapping
+D) TestNG grouping
+
+9. In Data-Driven framework, test data is typically stored in:
+A) Script file only
+B) Excel/CSV/Database CORRECT
+C) HTML file
+D) Console
+
+________________________________________
+10. What is the primary benefit of Data-Driven framework?
+A) Less execution time
+B) Multiple data sets execution without changing script CORRECT
+C) No need of test scripts
+D) Automatic bug fixing
+
+________________________________________
+11. Which of the following tools is commonly used for Data-Driven testing in Python?
+A) PyTest parametrize CORRECT
+B) Flask
+C) Docker
+D) Git
+
+________________________________________
+12. If login test runs with 20 usernames from Excel, it represents:
+A) Modular testing
+B) Keyword testing
+C) Data-driven testing CORRECT
+D) Unit testing
+
+13. In Keyword-Driven framework, actions like click, input, openBrowser are stored as:
+A) Variables
+B) Keywords CORRECT
+C) Test reports
+D) Test IDs
+
+________________________________________
+14. Who can design test cases easily in Keyword-Driven framework?
+A) Only developers
+B) Only automation engineers
+C) Non-technical testers CORRECT
+D) Database admins
+
+________________________________________
+15. In keyword-driven framework, mapping between keyword and function is handled by:
+A) Driver script CORRECT
+B) HTML file
+C) Config file
+D) Database trigger
+
+________________________________________
+16. What is a major disadvantage of Keyword-Driven framework?
+A) No scalability
+B) Complex initial setup CORRECT
+C) No reusability
+D) No reporting
+
+17. Hybrid framework combines:
+A) Only modular and library
+B) Only data and keyword
+C) Two or more frameworks CORRECT
+D) Only manual testing types
+
+________________________________________
+18. Most modern automation frameworks (Selenium + TestNG/PyTest) are examples of:
+A) Modular only
+B) Library only
+C) Hybrid framework CORRECT
+D) Waterfall model
+
+________________________________________
+19. If a framework uses reusable functions + Excel data + keywords, it is:
+A) Modular
+B) Data-driven
+C) Hybrid CORRECT
+D) Library only
+
+________________________________________
+20. Why is Hybrid framework widely used in real projects?
+A) Simple setup
+B) Low flexibility
+C) Combines strengths of multiple frameworks  CORRECT
+D) No coding required
+
+
+

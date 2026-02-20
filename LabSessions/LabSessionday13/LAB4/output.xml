@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-19T13:52:55.858545" rpa="false" schemaversion="5">
+<suite id="s1" name="Saucedemo" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\LabSessionday13\LAB4\saucedemo.robot">
+<test id="s1-t1" name="Verify Complete Checkout Flow" line="10">
+<kw name="Open Browser To SauceDemo" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:52:56.108438" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T13:52:56.108239" elapsed="1.399792"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T13:52:57.508305" elapsed="0.029171"/>
+</kw>
+<status status="PASS" start="2026-02-19T13:52:56.107591" elapsed="1.430673"/>
+</kw>
+<kw name="Login To Application" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:52:57.540950" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:52:57.540228" elapsed="0.154193"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:52:57.695036" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:52:57.694708" elapsed="0.092413"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:52:57.787881" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:52:57.787421" elapsed="0.133069"/>
+</kw>
+<status status="PASS" start="2026-02-19T13:52:57.539351" elapsed="0.381273"/>
+</kw>
+<kw name="Add Product To Cart" owner="keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:52:57.921370" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:52:57.921204" elapsed="0.067568"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:52:57.989101" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
+<arg>class:shopping_cart_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:52:57.988927" elapsed="0.055997"/>
+</kw>
+<status status="PASS" start="2026-02-19T13:52:57.920940" elapsed="0.124185"/>
+</kw>
+<kw name="Checkout Product" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:checkout</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T13:52:58.045963" elapsed="0.025557"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id:checkout</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-19T13:52:58.071692" elapsed="0.281647"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:52:58.354365" level="INFO">Clicking element 'id:checkout'.</msg>
+<arg>id:checkout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:52:58.353859" elapsed="0.056359"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:53:08.583835" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T13:53:08.584101" level="FAIL">Element 'id:firstName' did not appear in 10 seconds.</msg>
+<arg>id:firstName</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-02-19T13:52:58.410372" elapsed="10.176169">Element 'id:firstName' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:firstName</arg>
+<arg>Bhashkar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T13:53:08.586767" elapsed="0.000041"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:lastName</arg>
+<arg>Mishra</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T13:53:08.586902" elapsed="0.000026"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:postalCode</arg>
+<arg>560001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T13:53:08.587017" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:continue</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T13:53:08.587130" elapsed="0.000024"/>
+</kw>
+<status status="FAIL" start="2026-02-19T13:52:58.045551" elapsed="10.541724">Element 'id:firstName' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Finish Order" owner="keywords">
+<status status="NOT RUN" start="2026-02-19T13:53:08.587657" elapsed="0.000051"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-19T13:53:08.587919" elapsed="0.000034"/>
+</kw>
+<status status="FAIL" start="2026-02-19T13:52:56.106929" elapsed="12.481265">Element 'id:firstName' did not appear in 10 seconds.</status>
+</test>
+<status status="FAIL" start="2026-02-19T13:52:55.859821" elapsed="12.729008"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Saucedemo" id="s1" pass="0" fail="1" skip="0">Saucedemo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

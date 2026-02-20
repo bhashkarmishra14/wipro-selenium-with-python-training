@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-19T11:13:28.070701" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab1" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\LabSessionday13\Lab1.robot">
+<test id="s1-t1" name="Verify Checkbox Using Common XPath" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:13:28.404522" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/check-box.php'.</msg>
+<arg>${CHECKBOX_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T11:13:28.404046" elapsed="2.809612"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T11:13:31.215463" elapsed="0.076563"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:13:31.316152" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="ec9706453eb99995fbb681de8cfa74cb", element="f.EC01DF2C234F827C944895C68E42BAED.d.E2AF0D1E9486829D048EBACCBDB4C518.e.9")&gt;, &lt;selenium.webdrive...</msg>
+<var>${elements}</var>
+<arg>xpath://input[starts-with(@id,'c_bs_')]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2026-02-19T11:13:31.293498" elapsed="0.022743"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:13:31.319775" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="ec9706453eb99995fbb681de8cfa74cb", element="f.EC01DF2C234F827C944895C68E42BAED.d.E2AF0D1E9486829D048EBACCBDB4C518.e.9")&gt;'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T11:13:31.319483" elapsed="0.182164"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ec9706453eb99995fbb681de8cfa74cb", element="f.EC01DF2C234F827C944895C68E42BAED.d.E2AF0D1E9486829D048EBACCBDB4C518.e.9")&gt;</var>
+<status status="PASS" start="2026-02-19T11:13:31.319155" elapsed="0.182645"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:13:31.502670" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="ec9706453eb99995fbb681de8cfa74cb", element="f.EC01DF2C234F827C944895C68E42BAED.d.E2AF0D1E9486829D048EBACCBDB4C518.e.20")&gt;'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T11:13:31.502237" elapsed="0.060552"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ec9706453eb99995fbb681de8cfa74cb", element="f.EC01DF2C234F827C944895C68E42BAED.d.E2AF0D1E9486829D048EBACCBDB4C518.e.20")&gt;</var>
+<status status="PASS" start="2026-02-19T11:13:31.502040" elapsed="0.060893"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2026-02-19T11:13:31.317374" elapsed="0.245826"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T11:13:31.563673" elapsed="2.297768"/>
+</kw>
+<status status="PASS" start="2026-02-19T11:13:28.402503" elapsed="5.459464"/>
+</test>
+<test id="s1-t2" name="Verify Radio Button Impressive" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:13:33.863982" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/radio-button.php'.</msg>
+<arg>${RADIO_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T11:13:33.863701" elapsed="1.248467"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T11:13:35.112656" elapsed="0.043687"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@value='igotthree']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T11:13:35.156807" elapsed="0.053604"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:13:35.211027" level="INFO">Clicking element 'xpath://input[@value='igotthree']'.</msg>
+<arg>xpath://input[@value='igotthree']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T11:13:35.210758" elapsed="0.224676"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T11:13:35.436191" elapsed="2.437107"/>
+</kw>
+<status status="PASS" start="2026-02-19T11:13:33.863078" elapsed="4.010750"/>
+</test>
+<status status="PASS" start="2026-02-19T11:13:28.072120" elapsed="9.803119"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lab1" id="s1" pass="2" fail="0" skip="0">Lab1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

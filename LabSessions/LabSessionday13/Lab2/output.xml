@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-19T11:40:13.024886" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab2" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\LabSessionday13\Lab2\lab2.robot">
+<test id="s1-t1" name="Select State And City" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:40:13.300381" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T11:40:13.299959" elapsed="1.460360"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T11:40:14.760713" elapsed="0.247077"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://select[@id='state']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T11:40:15.008445" elapsed="0.048461"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:40:15.057398" level="INFO">Selecting options from selection list 'id=state' by label Uttar Pradesh.</msg>
+<arg>id=state</arg>
+<arg>Uttar Pradesh</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-19T11:40:15.057172" elapsed="0.119769"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-19T11:40:15.177561" level="INFO">Selecting options from selection list 'id=city' by label Lucknow.</msg>
+<arg>id=city</arg>
+<arg>Lucknow</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-19T11:40:15.177323" elapsed="0.080747"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-19T11:40:17.259364" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-19T11:40:15.258411" elapsed="2.001211"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T11:40:17.260162" elapsed="2.365055"/>
+</kw>
+<status status="PASS" start="2026-02-19T11:40:13.298232" elapsed="6.327518"/>
+</test>
+<status status="PASS" start="2026-02-19T11:40:13.026248" elapsed="6.600537"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lab2" id="s1" pass="1" fail="0" skip="0">Lab2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-19T12:51:45.043006" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab3" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\LabSessionday13\Lab3\lab3.robot">
+<test id="s1-t1" name="Verify Tutorialspoint Alerts" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:51:45.358056" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/alerts.php'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T12:51:45.357755" elapsed="1.596264"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T12:51:46.954765" elapsed="0.053806"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath:(//button[normalize-space()='Alert'])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:51:47.009934" elapsed="0.051617"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:51:47.062297" level="INFO">Clicking element 'xpath:(//button[normalize-space()='Alert'])[1]'.</msg>
+<arg>xpath:(//button[normalize-space()='Alert'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:51:47.061985" elapsed="0.102060"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:51:47.164617" level="INFO">HANDLE::&lt;class 'datetime.timedelta'&gt;::0:00:10</msg>
+<arg>action=ACCEPT</arg>
+<arg>timeout=10</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-02-19T12:51:47.164366" elapsed="0.007788"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-19T12:51:49.183771" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-19T12:51:47.173832" elapsed="2.010103"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:51:49.184594" level="INFO">Clicking element 'xpath:(//button[normalize-space()='Click Me'])[2]'.</msg>
+<arg>xpath:(//button[normalize-space()='Click Me'])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:51:49.184341" elapsed="0.052164"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:51:49.237016" level="INFO">HANDLE::&lt;class 'datetime.timedelta'&gt;::0:00:10</msg>
+<arg>action=DISMISS</arg>
+<arg>timeout=10</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-02-19T12:51:49.236807" elapsed="0.004993"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-19T12:51:51.242579" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-19T12:51:49.242091" elapsed="2.000619"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:51:51.243454" level="INFO">Clicking element 'xpath:(//button[normalize-space()='Click Me'])[3]'.</msg>
+<arg>xpath:(//button[normalize-space()='Click Me'])[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:51:51.243235" elapsed="0.051686"/>
+</kw>
+<kw name="Input Text Into Alert" owner="SeleniumLibrary">
+<arg>Hello=</arg>
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<status status="PASS" start="2026-02-19T12:51:51.295271" elapsed="0.006063"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-19T12:51:53.303266" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-19T12:51:51.302712" elapsed="2.000961"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T12:51:53.304166" elapsed="2.275394"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:51:45.356671" elapsed="10.223479"/>
+</test>
+<status status="PASS" start="2026-02-19T12:51:45.044525" elapsed="10.537090"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lab3" id="s1" pass="1" fail="0" skip="0">Lab3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
