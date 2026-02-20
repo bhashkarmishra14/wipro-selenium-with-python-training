@@ -1,0 +1,16 @@
+import paramiko
+host = "localhost"
+port = 22
+username = "harsha patil"
+password = "admin"
+client = paramiko.SSHClient()
+clint.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+clint.connect(
+    hostname=host,
+    port = port,
+    username = username,
+    password = password
+)
+stdin, stdout, stderr = client.exec_command("whoami")
+print(stdout.read().decode())
+client.close()
