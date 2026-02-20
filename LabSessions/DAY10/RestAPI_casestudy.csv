@@ -1,0 +1,121 @@
+Case study 1
+You are working as an Automation Engineer for a banking application.
+The system exposes REST APIs to manage customers.
+Base URL:
+https://jsonplaceholder.typicode.com/
+
+You need to test the complete customer lifecycle using:
+•	GET → Retrieve customer data
+•	POST → Create new customer
+•	PUT → Update customer
+•	DELETE → Remove customer
+•
+Step 1: POST – Create Customer
+Business Requirement
+When a new customer registers, the system should create a record and return 201 Created.
+ Test Case
+•	Send customer data
+•	Validate status code
+•	Validate response body
+•	Store customer ID for further tests
+Validations
+•	Status code = 201
+•	Response contains id
+•	Name matches request
+Step 2: GET – Retrieve Customer
+Business Requirement
+•	User should be able to view customer details using ID.
+Validations
+•	Status code = 200
+•	Correct customer details returned
+•	Email and balance match
+
+
+Step 3: PUT – Update Customer
+Business Requirement
+•	Customer updates email address.
+Validations
+•	Status code = 200
+•	Email updated
+•	ID remains same
+•
+Step 4: DELETE – Remove Customer
+Business Requirement
+•	Customer account closed → record removed.
+Validations
+•	Status code = 204
+•	GET request after delete returns 404
+Case Study 2
+Case Study: Healthcare Appointment Management API
+You are working as a Senior QA Automation Engineer in a healthcare product company.
+The system exposes REST APIs for:
+•	Patient Registration
+•	Doctor Creation
+•	Appointment Booking
+•	Appointment Update
+•	Appointment Cancellation
+Base URL:
+https://api.healthcareapp.com/v1
+Authentication:
+•	Bearer Token required for all APIs
+
+Business Workflow
+1.	Admin creates Doctor (POST)
+2.	Patient registers (POST)
+3.	Patient books appointment (POST)
+4.	Patient views appointment (GET)
+5.	Patient reschedules appointment (PUT)
+6.	Patient cancels appointment (DELETE)
+Round 1: Core API Design Understanding
+Doctor Creation API
+POST /doctors
+Request:
+{
+  "name": "Dr. Mehta",
+  "specialization": "Cardiologist",
+  "experience": 12
+}
+Expected:
+•	201 Created
+•	Unique doctor_id returned
+Patient Registration API
+POST /patients
+Edge Cases:
+•	Invalid age (<0)
+•	Missing email
+•	Duplicate phone number
+Expected:
+•	400 for validation errors
+•	409 for duplicates
+
+
+Round 2: Complex Workflow Validation
+Book Appointment
+POST /appointments
+Request:
+{
+  "patient_id": 101,
+  "doctor_id": 501,
+  "date": "2026-03-10",
+  "time": "10:00"
+}
+Round 3: PUT – Reschedule Appointment
+PUT /appointments/{id}
+If new time slot is already booked?
+Expected:
+•	409 Conflict
+•	Old appointment should remain unchanged
+
+Round 4: DELETE – Cancel Appointment
+DELETE /appointments/{id}
+Expected:
+•	204 No Content
+________________________________________
+If already cancelled?
+Expected:
+•	404 OR
+•	410 Gone (better design)
+
+
+
+

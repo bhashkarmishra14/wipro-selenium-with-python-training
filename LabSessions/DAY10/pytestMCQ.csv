@@ -1,0 +1,193 @@
+A team created a file named sampleTests.py containing multiple test functions starting with test_. When running pytest, no tests are executed.
+What is the most likely reason?
+A) pytest requires classes only
+B) File name does not match pytest discovery pattern CORRECT
+C) Functions must start with run_
+D) pytest does not support standalone functions
+________________________________________
+A test should run only on Linux OS. On Windows, it should automatically skip.
+Which is the best approach?
+A) if-else inside test
+B) pytest.fail()
+C) @pytest.mark.skipif(condition)CORRECT
+D) sys.exit()
+________________________________________
+A QA engineer wants to skip all tests in a file temporarily due to a known bug.
+What is the best way?
+A) Comment all tests
+B) Use pytest.skip() at top-levelCORRECT
+C) Add @pytest.mark.skip to each test
+D) Rename file
+________________________________________
+Consider:
+def setup_function():
+    print("Setup")
+
+def teardown_function():
+    print("Teardown")
+
+def test_one():
+    print("Test")
+What is the execution order?
+A) Test → Setup → Teardown
+B) Setup → Test → Teardown CORRECT
+C) Setup → Teardown → Test
+D) Test → Teardown → Setup
+You have 20 test methods in a class. A database connection should open once before all tests and close after all tests.
+Which is correct?
+A) setup_function
+B) setup_method
+C) setup_class CORRECT
+D) fixture with scope="function"
+________________________________________
+A login test should validate 5 username/password combinations.
+Which is the most efficient solution?
+A) Write 5 separate tests
+B) Use for loop inside test
+C) Use @pytest.mark.parametrize CORRECT
+D) Use global variables
+________________________________________
+@pytest.mark.parametrize("x", [1,2,3])
+def test_num(x):
+    assert x > 0
+How many test cases will run?
+A) 1
+B) 2
+C) 3 CORRECT
+D) Depends on assertion
+________________________________________
+A test fails due to a known bug. The team wants it to run but not fail the test suite.
+What should be used?
+A) skip
+B) xfail CORRECT
+C) parametrize
+D) teardown
+________________________________________
+Parent class has setup_method. Child class inherits it.
+Will setup execute for child test methods?
+A) No
+B) Yes CORRECT
+C) Only if overridden
+D) Only with fixture
+________________________________________
+@pytest.mark.parametrize("a", [1,2])
+@pytest.mark.parametrize("b", [3,4])
+def test_add(a,b):
+    assert a+b > 0
+How many total test executions?
+A) 2
+B) 4 CORRECT
+C) 6
+D) 8
+________________________________________
+Case Study 1: Skipping Based on API Version
+Your API test should run only if version >= 2.0. Otherwise skip automatically.
+Best solution?
+A) Manual if condition
+B) @pytest.mark.skipif(version < 2.0) CORRECT
+C) assert version >= 2.0
+D) try-except
+________________________________________
+Case Study 2: Slow Tests
+Some tests take 10 minutes. The team wants to exclude them during quick regression runs.
+What should be done?
+A) Rename file
+B) Add custom marker like @pytest.mark.slow CORRECT
+C) Remove tests
+D) Skip permanently
+________________________________________
+Case Study 3: Shared Login Setup
+Every test needs login first. Current approach duplicates login code in 50 tests.
+Best improvement?
+A) Use setup_function
+B) Use fixture CORRECT
+C) Use parametrize
+D) Use skip
+________________________________________
+Case Study 4: Test Discovery Confusion
+A developer writes:
+class TestLogin:
+    def login_test(self):
+        assert True
+Why is test not discovered?
+A) Class name wrong
+B) Method name does not start with test_ CORRECT
+C) Missing setup
+D) pytest requires main function
+________________________________________
+Case Study 5: Teardown Not Running
+A test fails before completion. Team notices teardown_method is still executed.
+Why?
+A) teardown runs only on success
+B) teardown runs regardless of test result CORRECT
+C) teardown requires skip
+D) teardown is optional
+________________________________________
+Case Study 6: Parametrize with Multiple Arguments
+@pytest.mark.parametrize("a,b,result", [(2,3,5),(4,5,9)])
+def test_add(a,b,result):
+    assert a+b == result
+How many executions?
+A) 1
+B) 2 CORRECT
+C) 3
+D) 4
+________________________________________
+Case Study 7: Skipping Dynamically
+Inside a test:
+if not server_available:
+    pytest.skip("Server down")
+When does skip happen?
+A) Before test collection
+B) During test execution CORRECT
+C) After teardown
+D) At import time
+
+8 .@pytest.mark.parametrize("x", [1,2,3])
+def test_even(x):
+    assert x % 2 == 0
+How many failures?
+
+A) 1
+B) 2 CORRECT
+C) 3
+D) None
+9.
+File name: Test_login.py
+Will pytest discover it by default?
+A) Yes
+B) No CORRECT
+C) Only with -k option
+D) Only if inside class
+
+10. Skip vs Xfail Difference
+When should xfail be preferred over skip?
+A) When feature not implemented
+B) When known bug exists but test should still run CORRECT
+C) When environment not supported
+D) When test not ready
+
+11. @pytest.mark.parametrize("a", [1,2,3])
+@pytest.mark.parametrize("b", [4,5])
+@pytest.mark.parametrize("c", [6,7])
+def test_calc(a,b,c):
+    assert a+b+c > 0
+How many total executions?
+
+A) 6
+B) 8
+C) 10
+D) 12 CORRECT
+12.
+@pytest.mark.parametrize("x", [])
+def test_empty(x):
+    assert True
+What happens?
+A)	1 test runs
+B) Error
+C) Test skipped
+D) No tests collected CORRECT
+
+
+
+
