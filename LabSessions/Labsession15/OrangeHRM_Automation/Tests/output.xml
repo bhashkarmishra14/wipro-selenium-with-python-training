@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-21T18:22:37.183242" rpa="false" schemaversion="5">
+<suite id="s1" name="Test3" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\Labsession15\OrangeHRM_Automation\Tests\test3.robot">
+<test id="s1-t1" name="TC_03 Verify Personal Details Modification" line="7">
+<kw name="Open OrangeHRM Login Page" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-21T18:22:37.485844" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-21T18:22:37.485588" elapsed="6.651897"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-21T18:22:44.138081" elapsed="0.034062"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T18:22:44.172791" elapsed="0.742181"/>
+</kw>
+<status status="PASS" start="2026-02-21T18:22:37.484913" elapsed="7.430239"/>
+</kw>
+<kw name="Enter Username" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T18:22:44.916473" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T18:22:44.916174" elapsed="0.580818"/>
+</kw>
+<arg>${VALID_USER}</arg>
+<status status="PASS" start="2026-02-21T18:22:44.915672" elapsed="0.581579"/>
+</kw>
+<kw name="Enter Password" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T18:22:45.499007" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T18:22:45.498539" elapsed="0.085776"/>
+</kw>
+<arg>${VALID_PASS}</arg>
+<status status="PASS" start="2026-02-21T18:22:45.497883" elapsed="0.086580"/>
+</kw>
+<kw name="Click Login Button" owner="Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-21T18:22:45.585399" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T18:22:45.585173" elapsed="0.084883"/>
+</kw>
+<status status="PASS" start="2026-02-21T18:22:45.584834" elapsed="0.085487"/>
+</kw>
+<kw name="Open Personal Details Page" owner="PersonalDetails">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://span[text()='My Info']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T18:22:45.671026" elapsed="2.481134"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T18:22:48.152727" level="INFO">Clicking element 'xpath://span[text()='My Info']'.</msg>
+<arg>xpath://span[text()='My Info']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T18:22:48.152424" elapsed="2.694436"/>
+</kw>
+<status status="PASS" start="2026-02-21T18:22:45.670670" elapsed="5.176466"/>
+</kw>
+<kw name="Change First Name" owner="PersonalDetails">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=firstName</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T18:22:50.848425" elapsed="0.709579"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=firstName</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T18:22:51.558182" elapsed="0.027125"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T18:22:51.585745" level="INFO">Typing text 'BhashkarNew' into text field 'name=firstName'.</msg>
+<arg>name=firstName</arg>
+<arg>${newname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T18:22:51.585468" elapsed="0.077066"/>
+</kw>
+<arg>BhashkarNew</arg>
+<status status="PASS" start="2026-02-21T18:22:50.847753" elapsed="0.815007"/>
+</kw>
+<kw name="Save Personal Details" owner="PersonalDetails">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath:(//button[@type='submit'])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T18:22:51.664358" elapsed="0.023695"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'oxd-form-loader')]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-02-21T18:22:51.688209" elapsed="1.788269"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T18:22:53.477282" level="INFO">Clicking element 'xpath:(//button[@type='submit'])[1]'.</msg>
+<arg>xpath:(//button[@type='submit'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T18:22:53.476869" elapsed="0.071251"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Successfully Updated</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-21T18:22:53.548318" elapsed="0.861670"/>
+</kw>
+<status status="PASS" start="2026-02-21T18:22:51.663973" elapsed="2.746427"/>
+</kw>
+<kw name="Verify First Name Updated" owner="PersonalDetails">
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-21T18:22:54.641267" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-21T18:22:54.641440" level="FAIL">Value of text field 'name=firstName' should have been 'BhashkarNew' but was 'Aayush'.</msg>
+<arg>name=firstName</arg>
+<arg>${newname}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="FAIL" start="2026-02-21T18:22:54.412038" elapsed="0.322408">Value of text field 'name=firstName' should have been 'BhashkarNew' but was 'Aayush'.</status>
+</kw>
+<arg>BhashkarNew</arg>
+<status status="FAIL" start="2026-02-21T18:22:54.411266" elapsed="0.323426">Value of text field 'name=firstName' should have been 'BhashkarNew' but was 'Aayush'.</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2026-02-21T18:22:54.735274" elapsed="0.000076"/>
+</kw>
+<status status="FAIL" start="2026-02-21T18:22:37.484182" elapsed="17.251758">Value of text field 'name=firstName' should have been 'BhashkarNew' but was 'Aayush'.</status>
+</test>
+<status status="FAIL" start="2026-02-21T18:22:37.184901" elapsed="17.554340"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test3" id="s1" pass="0" fail="1" skip="0">Test3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

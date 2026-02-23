@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-21T15:47:24.608245" rpa="false" schemaversion="5">
+<suite id="s1" name="Ecommerce" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\Labsession15\ecommerce.robot">
+<test id="s1-t1" name="Register User Full Flow" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:24.924580" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-21T15:47:24.924311" elapsed="3.567487"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-21T15:47:28.492722" elapsed="0.074825"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-02-21T15:47:28.567915" elapsed="0.001322"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:28.569861" level="INFO">Clicking element 'xpath://a[contains(text(),'Signup / Login')]'.</msg>
+<arg>xpath://a[contains(text(),'Signup / Login')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:47:28.569519" elapsed="2.405212"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:30.976957" level="INFO">Typing text 'Bhashhkkarir' into text field 'xpath://input[@data-qa='signup-name']'.</msg>
+<arg>xpath://input[@data-qa='signup-name']</arg>
+<arg>Bhashhkkarir</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:47:30.975675" elapsed="0.439614"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:31.416081" level="INFO">Typing text 'bhashkkar9912noew@gmail.com' into text field 'xpath://input[@data-qa='signup-email']'.</msg>
+<arg>xpath://input[@data-qa='signup-email']</arg>
+<arg>bhashkkar9912noew@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:47:31.415769" elapsed="0.117197"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:31.533630" level="INFO">Clicking button 'xpath://button[@data-qa='signup-button']'.</msg>
+<arg>xpath://button[@data-qa='signup-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:47:31.533320" elapsed="1.966566"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T15:47:33.500321" elapsed="0.033798"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:33.534653" level="INFO">Clicking element 'id=id_gender1'.</msg>
+<arg>id=id_gender1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:47:33.534422" elapsed="0.061676"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:33.596767" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:47:33.596516" elapsed="0.154791"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:33.751895" level="INFO">Selecting options from selection list 'id=days' by value 10.</msg>
+<arg>id=days</arg>
+<arg>10</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-02-21T15:47:33.751636" elapsed="0.079110"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:33.831233" level="INFO">Selecting options from selection list 'id=months' by value 5.</msg>
+<arg>id=months</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-02-21T15:47:33.831025" elapsed="0.067294"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:33.898830" level="INFO">Selecting options from selection list 'id=years' by value 1998.</msg>
+<arg>id=years</arg>
+<arg>1998</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-02-21T15:47:33.898627" elapsed="0.081845"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:33.980930" level="INFO">Clicking element 'id=newsletter'.</msg>
+<msg time="2026-02-21T15:47:35.246221" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-21T15:47:35.246573" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="checkbox" name="newsletter" id="newsletter" value="1"&gt; is not clickable at point (295, 675). Other element would receive the click: &lt;iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260218/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=2" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJCmzMSt6pIDFTLIFgUdGX4PXA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=138.0.7204.169); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d1cbe415+77285]
+	GetHandleVerifier [0x0x7ff7d1cbe470+77376]
+	(No symbol) [0x0x7ff7d1a89a6a]
+	(No symbol) [0x0x7ff7d1ae83e9]
+	(No symbol) [0x0x7ff7d1ae5d8b]
+	(No symbol) [0x0x7ff7d1ae2dd1]
+	(No symbol) [0x0x7ff7d1ae1ce1]
+	(No symbol) [0x0x7ff7d1ad3458]
+	(No symbol) [0x0x7ff7d1b0860a]
+	(No symbol) [0x0x7ff7d1ad2d06]
+	(No symbol) [0x0x7ff7d1b08820]
+	(No symbol) [0x0x7ff7d1b3087f]
+	(No symbol) [0x0x7ff7d1b083e3]
+	(No symbol) [0x0x7ff7d1ad1521]
+	(No symbol) [0x0x7ff7d1ad22b3]
+	GetHandleVerifier [0x0x7ff7d1fa1efd+3107021]
+	GetHandleVerifier [0x0x7ff7d1f9c29d+3083373]
+	GetHandleVerifier [0x0x7ff7d1fbbedd+3213485]
+	GetHandleVerifier [0x0x7ff7d1cd884e+184862]
+	GetHandleVerifier [0x0x7ff7d1ce055f+216879]
+	GetHandleVerifier [0x0x7ff7d1cc7084+113236]
+	GetHandleVerifier [0x0x7ff7d1cc7239+113673]
+	GetHandleVerifier [0x0x7ff7d1cae298+11368]
+	BaseThreadInitThunk [0x0x7ff8e472e8d7+23]
+	RtlUserThreadStart [0x0x7ff8e5bac40c+44]
+</msg>
+<arg>id=newsletter</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-21T15:47:33.980743" elapsed="1.272638">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="checkbox" name="newsletter" id="newsletter" value="1"&gt; is not clickable at point (295, 675). Other element would receive the click: &lt;iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260218/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=2" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJCmzMSt6pIDFTLIFgUdGX4PXA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=138.0.7204.169); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d1cbe415+77285]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff7d1ae2dd1]
+	(No symbol) [0x0x7ff7d1ae1ce1]
+	(No symbol) [0x0x7ff7d1ad3458]
+	(No symbol) [0x0x7ff7d1b0860a]
+	(No symbol) [0x0x7ff7d1ad2d06]
+	(No symbol) [0x0x7ff7d1b08820]
+	(No symbol) [0x0x7ff7d1b3087f]
+	(No symbol) [0x0x7ff7d1b083e3]
+	(No symbol) [0x0x7ff7d1ad1521]
+	(No symbol) [0x0x7ff7d1ad22b3]
+	GetHandleVerifier [0x0x7ff7d1fa1efd+3107021]
+	GetHandleVerifier [0x0x7ff7d1f9c29d+3083373]
+	GetHandleVerifier [0x0x7ff7d1fbbedd+3213485]
+	GetHandleVerifier [0x0x7ff7d1cd884e+184862]
+	GetHandleVerifier [0x0x7ff7d1ce055f+216879]
+	GetHandleVerifier [0x0x7ff7d1cc7084+113236]
+	GetHandleVerifier [0x0x7ff7d1cc7239+113673]
+	GetHandleVerifier [0x0x7ff7d1cae298+11368]
+	BaseThreadInitThunk [0x0x7ff8e472e8d7+23]
+	RtlUserThreadStart [0x0x7ff8e5bac40c+44]</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=optin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.253974" elapsed="0.000049"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=first_name</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.254229" elapsed="0.000036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=first_name</arg>
+<arg>Bhashkar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.254456" elapsed="0.000037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=last_name</arg>
+<arg>Mishra</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.254797" elapsed="0.000034"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=company</arg>
+<arg>ABC Company</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.255012" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=address1</arg>
+<arg>Kolkata Street</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.255255" elapsed="0.000047"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=address2</arg>
+<arg>Near Park</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.255541" elapsed="0.000037"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=country</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.255848" elapsed="0.000041"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=state</arg>
+<arg>West Bengal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.256108" elapsed="0.000040"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=city</arg>
+<arg>Kolkata</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.256352" elapsed="0.000037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=zipcode</arg>
+<arg>700001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.256593" elapsed="0.000040"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=mobile_number</arg>
+<arg>9876543210</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.257044" elapsed="0.000045"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://button[@data-qa='create-account']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.257294" elapsed="0.000038"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[@data-qa='create-account']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.257570" elapsed="0.000041"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://a[@data-qa='continue-button']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.257810" elapsed="0.000037"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[@data-qa='continue-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.258041" elapsed="0.000036"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Logged in as</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.258267" elapsed="0.000035"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2026-02-21T15:47:35.258497" elapsed="0.000036"/>
+</kw>
+<status status="FAIL" start="2026-02-21T15:47:24.923390" elapsed="10.335453">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="checkbox" name="newsletter" id="newsletter" value="1"&gt; is not clickable at point (295, 675). Other element would receive the click: &lt;iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260218/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=2" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJCmzMSt6pIDFTLIFgUdGX4PXA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=138.0.7204.169); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d1cbe415+77285]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff7d1ae2dd1]
+	(No symbol) [0x0x7ff7d1ae1ce1]
+	(No symbol) [0x0x7ff7d1ad3458]
+	(No symbol) [0x0x7ff7d1b0860a]
+	(No symbol) [0x0x7ff7d1ad2d06]
+	(No symbol) [0x0x7ff7d1b08820]
+	(No symbol) [0x0x7ff7d1b3087f]
+	(No symbol) [0x0x7ff7d1b083e3]
+	(No symbol) [0x0x7ff7d1ad1521]
+	(No symbol) [0x0x7ff7d1ad22b3]
+	GetHandleVerifier [0x0x7ff7d1fa1efd+3107021]
+	GetHandleVerifier [0x0x7ff7d1f9c29d+3083373]
+	GetHandleVerifier [0x0x7ff7d1fbbedd+3213485]
+	GetHandleVerifier [0x0x7ff7d1cd884e+184862]
+	GetHandleVerifier [0x0x7ff7d1ce055f+216879]
+	GetHandleVerifier [0x0x7ff7d1cc7084+113236]
+	GetHandleVerifier [0x0x7ff7d1cc7239+113673]
+	GetHandleVerifier [0x0x7ff7d1cae298+11368]
+	BaseThreadInitThunk [0x0x7ff8e472e8d7+23]
+	RtlUserThreadStart [0x0x7ff8e5bac40c+44]</status>
+</test>
+<test id="s1-t2" name="Login User With Correct Credentials" line="54">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:35.261357" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-21T15:47:35.261082" elapsed="4.161047"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-21T15:47:39.422627" elapsed="0.056079"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-02-21T15:47:39.479234" elapsed="0.002336"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:47:39.482325" level="INFO">Clicking element 'xpath://a[contains(text(),'Signup / Login')]'.</msg>
+<arg>xpath://a[contains(text(),'Signup / Login')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:47:39.481942" elapsed="3.340748"/>

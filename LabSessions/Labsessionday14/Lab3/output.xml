@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-20T13:15:43.439001" rpa="false" schemaversion="5">
+<suite id="s1" name="TabsLab" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\Labsessionday14\Lab3\TabsLab.robot">
+<test id="s1-t1" name="Verify Window And Tab" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-20T13:15:43.735798" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T13:15:43.735529" elapsed="3.660724"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-20T13:15:47.397294" elapsed="0.256163"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-02-20T13:15:47.654306" elapsed="0.009603"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T13:15:47.669008" level="INFO">Clicking element 'id=openwindow'.</msg>
+<arg>id=openwindow</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T13:15:47.668092" elapsed="0.297742"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<msg time="2026-02-20T13:15:47.983226" level="INFO">@{windows} = [ 480EF70985A171BD89A787D3B2D99EA8 | 6C004FE856B608461ABEB678533DA3F5 ]</msg>
+<var>@{windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="PASS" start="2026-02-20T13:15:47.966494" elapsed="0.016841"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${windows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-20T13:15:47.983917" elapsed="0.002510"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-02-20T13:15:47.993975" elapsed="0.019269"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-20T13:15:50.373476" level="INFO">Element 'xpath://body' contains text 'info@qaclickacademy.com'.</msg>
+<arg>xpath://body</arg>
+<arg>info@qaclickacademy.com</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-02-20T13:15:48.014573" elapsed="2.359064"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-02-20T13:15:50.374408" elapsed="0.013284"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T13:15:50.389697" level="INFO">Clicking element 'id=opentab'.</msg>
+<arg>id=opentab</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T13:15:50.388990" elapsed="0.591425"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<msg time="2026-02-20T13:15:51.213202" level="INFO">@{tabs} = [ 480EF70985A171BD89A787D3B2D99EA8 | 6C004FE856B608461ABEB678533DA3F5 | B0557F798919C9189314AC2BF6E095EA ]</msg>
+<var>@{tabs}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="PASS" start="2026-02-20T13:15:50.981074" elapsed="0.232234"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${tabs}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-20T13:15:51.213832" elapsed="0.002618"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-02-20T13:15:51.219414" elapsed="0.017141"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-20T13:15:51.945172" level="INFO">Element 'xpath://body' contains text 'info@qaclickacademy.com'.</msg>
+<arg>xpath://body</arg>
+<arg>info@qaclickacademy.com</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-02-20T13:15:51.237084" elapsed="0.708400"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-02-20T13:15:51.946257" elapsed="0.043289"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T13:15:51.990073" elapsed="2.674272"/>
+</kw>
+<status status="PASS" start="2026-02-20T13:15:43.734006" elapsed="10.930846"/>
+</test>
+<status status="PASS" start="2026-02-20T13:15:43.440426" elapsed="11.225222"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TabsLab" id="s1" pass="1" fail="0" skip="0">TabsLab</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

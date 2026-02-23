@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-23T09:39:07.481200" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\Labsession15\OrangeHRM_Automation\Tests">
+<suite id="s1-s1" name="Test1" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\Labsession15\OrangeHRM_Automation\Tests\test1.robot">
+<test id="s1-s1-t1" name="TC_01 Verify Successful Employee Login" line="8">
+<kw name="Open OrangeHRM Login Page" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:39:07.804020" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-23T09:39:07.803787" elapsed="17.322739"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-23T09:39:25.127036" elapsed="0.043638"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T09:39:25.171100" elapsed="4.158025"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:39:07.803043" elapsed="21.526216"/>
+</kw>
+<kw name="Enter Username" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:39:29.330423" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:39:29.330203" elapsed="0.101427"/>
+</kw>
+<arg>${VALID_USER}</arg>
+<status status="PASS" start="2026-02-23T09:39:29.329868" elapsed="0.101912"/>
+</kw>
+<kw name="Enter Password" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:39:29.432627" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:39:29.432425" elapsed="0.095142"/>
+</kw>
+<arg>${VALID_PASS}</arg>
+<status status="PASS" start="2026-02-23T09:39:29.432128" elapsed="0.095635"/>
+</kw>
+<kw name="Click Login Button" owner="Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:39:29.528685" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:39:29.528491" elapsed="0.068149"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:39:29.528216" elapsed="0.068545"/>
+</kw>
+<kw name="Verify User Logged In" owner="Dashboard">
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>dashboard</arg>
+<arg>15s</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-02-23T09:39:29.597484" elapsed="8.658554"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:39:29.597075" elapsed="8.659121"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-23T09:39:38.256540" elapsed="2.331855"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:39:07.802355" elapsed="32.786500"/>
+</test>
+<status status="PASS" start="2026-02-23T09:39:07.529170" elapsed="33.060579"/>
+</suite>
+<suite id="s1-s2" name="Test2" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\Labsession15\OrangeHRM_Automation\Tests\test2.robot">
+<test id="s1-s2-t1" name="TC_02 Verify Invalid Login" line="6">
+<kw name="Open OrangeHRM Login Page" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:39:40.595996" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-23T09:39:40.595694" elapsed="8.025541"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-23T09:39:48.621428" elapsed="0.023163"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T09:39:48.644770" elapsed="0.985629"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:39:40.595309" elapsed="9.035301"/>
+</kw>
+<kw name="Enter Username" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:39:49.631641" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:39:49.631364" elapsed="0.082739"/>
+</kw>
+<arg>${VALID_USER}</arg>
+<status status="PASS" start="2026-02-23T09:39:49.631011" elapsed="0.083197"/>
+</kw>
+<kw name="Enter Password" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:39:49.715066" level="INFO">Typing text 'wrongpass' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:39:49.714805" elapsed="0.102687"/>
+</kw>
+<arg>wrongpass</arg>
+<status status="PASS" start="2026-02-23T09:39:49.714515" elapsed="0.103082"/>
+</kw>
+<kw name="Click Login Button" owner="Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:39:49.818362" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:39:49.818195" elapsed="0.072546"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:39:49.817877" elapsed="0.073023"/>
+</kw>
+<kw name="Verify Invalid Login Error" owner="Login">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-23T09:39:49.891688" elapsed="9.128511"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:39:49.891274" elapsed="9.129117"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-23T09:39:59.020781" elapsed="2.303751"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:39:40.594744" elapsed="20.730238"/>
+</test>
+<status status="PASS" start="2026-02-23T09:39:40.590912" elapsed="20.735069"/>
+</suite>
+<suite id="s1-s3" name="Test3" source="C:\Users\bhash\PycharmProjects\Feb2026WiproRobotFramework\LabSessions\Labsession15\OrangeHRM_Automation\Tests\test3.robot">
+<test id="s1-s3-t1" name="TC_03 Verify Personal Details Modification" line="7">
+<kw name="Open OrangeHRM Login Page" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:40:01.334145" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-23T09:40:01.333916" elapsed="8.804472"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-23T09:40:10.138689" elapsed="0.039894"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T09:40:10.178848" elapsed="2.241100"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:40:01.333612" elapsed="11.086446"/>
+</kw>
+<kw name="Enter Username" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:40:12.420921" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:40:12.420713" elapsed="0.097011"/>
+</kw>
+<arg>${VALID_USER}</arg>
+<status status="PASS" start="2026-02-23T09:40:12.420402" elapsed="0.097521"/>
+</kw>
+<kw name="Enter Password" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:40:12.519642" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:40:12.518958" elapsed="0.090988"/>
+</kw>
+<arg>${VALID_PASS}</arg>
+<status status="PASS" start="2026-02-23T09:40:12.518407" elapsed="0.091658"/>
+</kw>
+<kw name="Click Login Button" owner="Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:40:12.611146" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:40:12.610873" elapsed="0.070926"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:40:12.610463" elapsed="0.071594"/>
+</kw>
+<kw name="Open Personal Details Page" owner="PersonalDetails">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://span[text()='My Info']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T09:40:12.682873" elapsed="16.221023"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:40:28.904228" level="INFO">Clicking element 'xpath://span[text()='My Info']'.</msg>
+<arg>xpath://span[text()='My Info']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:40:28.904056" elapsed="9.028222"/>
+</kw>
+<status status="PASS" start="2026-02-23T09:40:12.682527" elapsed="25.249893"/>
+</kw>
+<kw name="Change First Name" owner="PersonalDetails">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath:(//input[@name='firstName'])[1]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T09:40:37.933307" elapsed="1.720737"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath:(//input[@name='firstName'])[1]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:40:39.654206" elapsed="0.043268"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:40:39.698032" level="INFO">Typing text 'BhashkarNew' into text field 'xpath:(//input[@name='firstName'])[1]'.</msg>
+<arg>xpath:(//input[@name='firstName'])[1]</arg>
+<arg>${newname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:40:39.697707" elapsed="0.102075"/>
+</kw>
+<arg>BhashkarNew</arg>
+<status status="PASS" start="2026-02-23T09:40:37.932849" elapsed="1.867099"/>
+</kw>
+<kw name="Change Last Name" owner="PersonalDetails">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath:(//input[@name='lastName'])[1]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T09:40:39.800668" elapsed="0.021515"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath:(//input[@name='lastName'])[1]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:40:39.822344" elapsed="0.061268"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:40:39.884143" level="INFO">Typing text 'TestLast' into text field 'xpath:(//input[@name='lastName'])[1]'.</msg>
+<arg>xpath:(//input[@name='lastName'])[1]</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T09:40:39.883827" elapsed="0.067690"/>
+</kw>
+<arg>TestLast</arg>
+<status status="PASS" start="2026-02-23T09:40:39.800367" elapsed="0.151430"/>
+</kw>
+<kw name="Save Personal Details" owner="PersonalDetails">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath:(//button[@type='submit'])[1]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T09:40:39.952513" elapsed="0.017214"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:(//button[@type='submit'])[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-23T09:40:39.969962" elapsed="0.278819"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-23T09:40:40.249218" level="INFO">Clicking button 'xpath:(//button[@type='submit'])[1]'.</msg>
+<msg time="2026-02-23T09:40:41.547754" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-23T09:40:41.548096" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1402, 662). Other element would receive the click: &lt;div data-v-d5bfe35b="" class="oxd-form-loader"&gt;...&lt;/div&gt;
+  (Session info: chrome=138.0.7204.169); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7548ee415+77285]
+	GetHandleVerifier [0x0x7ff7548ee470+77376]
+	(No symbol) [0x0x7ff7546b9a6a]
+	(No symbol) [0x0x7ff7547183e9]
+	(No symbol) [0x0x7ff754715d8b]
+	(No symbol) [0x0x7ff754712dd1]
+	(No symbol) [0x0x7ff754711ce1]
+	(No symbol) [0x0x7ff754703458]
+	(No symbol) [0x0x7ff75473860a]
+	(No symbol) [0x0x7ff754702d06]
+	(No symbol) [0x0x7ff754738820]
+	(No symbol) [0x0x7ff75476087f]
+	(No symbol) [0x0x7ff7547383e3]
+	(No symbol) [0x0x7ff754701521]
+	(No symbol) [0x0x7ff7547022b3]
+	GetHandleVerifier [0x0x7ff754bd1efd+3107021]
+	GetHandleVerifier [0x0x7ff754bcc29d+3083373]
+	GetHandleVerifier [0x0x7ff754bebedd+3213485]
+	GetHandleVerifier [0x0x7ff75490884e+184862]
+	GetHandleVerifier [0x0x7ff75491055f+216879]
+	GetHandleVerifier [0x0x7ff7548f7084+113236]
+	GetHandleVerifier [0x0x7ff7548f7239+113673]
+	GetHandleVerifier [0x0x7ff7548de298+11368]
+	BaseThreadInitThunk [0x0x7ff8e472e8d7+23]
+	RtlUserThreadStart [0x0x7ff8e5bac40c+44]
+</msg>
+<arg>xpath:(//button[@type='submit'])[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-23T09:40:40.248976" elapsed="1.433094">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1402, 662). Other element would receive the click: &lt;div data-v-d5bfe35b="" class="oxd-form-loader"&gt;...&lt;/div&gt;
+  (Session info: chrome=138.0.7204.169); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7548ee415+77285]
+	GetHandleVerifier [0x0x7ff7548ee470+77376]
+	(No symbol) [0x0x7ff7546b9a6a]
+	(No symbol) [0x0x7ff7547183e9]
+	(No symbol) [0x0x7ff754715d8b]
+	(No symbol) [0x0x7ff754712dd1]
+	(No symbol) [0x0x7ff754711ce1]
+	(No symbol) [0x0x7ff754703458]
+	(No symbol) [0x0x7ff75473860a]
+	(No symbol) [0x0x7ff754702d06]
+	(No symbol) [0x0x7ff754738820]
+	(No symbol) [0x0x7ff75476087f]
+	(No symbol) [0x0x7ff7547383e3]
+	(No symbol) [0x0x7ff754701521]
+	(No symbol) [0x0x7ff7547022b3]
+	GetHandleVerifier [0x0x7ff754bd1efd+3107021]
+	GetHandleVerifier [0x0x7ff754bcc29d+3083373]
+	GetHandleVerifier [0x0x7ff754bebedd+3213485]
+	GetHandleVerifier [0x0x7ff75490884e+184862]
+	GetHandleVerifier [0x0x7ff75491055f+216879]
+	GetHandleVerifier [0x0x7ff7548f7084+113236]
+	GetHandleVerifier [0x0x7ff7548f7239+113673]
+	GetHandleVerifier [0x0x7ff7548de298+11368]
+	BaseThreadInitThunk [0x0x7ff8e472e8d7+23]
+	RtlUserThreadStart [0x0x7ff8e5bac40c+44]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Successfully Updated</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-23T09:40:41.682599" elapsed="0.000071"/>
+</kw>
+<status status="FAIL" start="2026-02-23T09:40:39.952220" elapsed="1.730668">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1402, 662). Other element would receive the click: &lt;div data-v-d5bfe35b="" class="oxd-form-loader"&gt;...&lt;/div&gt;
+  (Session info: chrome=138.0.7204.169); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7548ee415+77285]
+	GetHandleVerifier [0x0x7ff7548ee470+77376]
+	(No symbol) [0x0x7ff7546b9a6a]
+	(No symbol) [0x0x7ff7547183e9]
+	(No symbol) [0x0x7ff754715d8b]
+	(No symbol) [0x0x7ff754712dd1]
+	(No symbol) [0x0x7ff754711ce1]
+	(No symbol) [0x0x7ff754703458]
+	(No symbol) [0x0x7ff75473860a]
+	(No symbol) [0x0x7ff754702d06]
+	(No symbol) [0x0x7ff754738820]
+	(No symbol) [0x0x7ff75476087f]
+	(No symbol) [0x0x7ff7547383e3]
+	(No symbol) [0x0x7ff754701521]
+	(No symbol) [0x0x7ff7547022b3]
+	GetHandleVerifier [0x0x7ff754bd1efd+3107021]
+	GetHandleVerifier [0x0x7ff754bcc29d+3083373]
+	GetHandleVerifier [0x0x7ff754bebedd+3213485]
+	GetHandleVerifier [0x0x7ff75490884e+184862]
+	GetHandleVerifier [0x0x7ff75491055f+216879]
+	GetHandleVerifier [0x0x7ff7548f7084+113236]
+	GetHandleVerifier [0x0x7ff7548f7239+113673]
+	GetHandleVerifier [0x0x7ff7548de298+11368]
+	BaseThreadInitThunk [0x0x7ff8e472e8d7+23]
+	RtlUserThreadStart [0x0x7ff8e5bac40c+44]
+</status>
+</kw>
+<kw name="Verify First Name Updated" owner="PersonalDetails">
+<arg>BhashkarNew</arg>
+<status status="NOT RUN" start="2026-02-23T09:40:41.683346" elapsed="0.000061"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2026-02-23T09:40:41.683957" elapsed="0.000043"/>
+</kw>
+<status status="FAIL" start="2026-02-23T09:40:01.333073" elapsed="40.351357">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1402, 662). Other element would receive the click: &lt;div data-v-d5bfe35b="" class="oxd-form-loader"&gt;...&lt;/div&gt;
+  (Session info: chrome=138.0.7204.169); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7548ee415+77285]
+	GetHandleVerifier [0x0x7ff7548ee470+77376]
+	(No symbol) [0x0x7ff7546b9a6a]
+	(No symbol) [0x0x7ff7547183e9]
+	(No symbol) [0x0x7ff754715d8b]
+	(No symbol) [0x0x7ff754712dd1]
+	(No symbol) [0x0x7ff754711ce1]
+	(No symbol) [0x0x7ff754703458]
+	(No symbol) [0x0x7ff75473860a]
+	(No symbol) [0x0x7ff754702d06]
+	(No symbol) [0x0x7ff754738820]
+	(No symbol) [0x0x7ff75476087f]
+	(No symbol) [0x0x7ff7547383e3]
+	(No symbol) [0x0x7ff754701521]
+	(No symbol) [0x0x7ff7547022b3]
+	GetHandleVerifier [0x0x7ff754bd1efd+3107021]
+	GetHandleVerifier [0x0x7ff754bcc29d+3083373]
+	GetHandleVerifier [0x0x7ff754bebedd+3213485]
+	GetHandleVerifier [0x0x7ff75490884e+184862]
+	GetHandleVerifier [0x0x7ff75491055f+216879]
+	GetHandleVerifier [0x0x7ff7548f7084+113236]
+	GetHandleVerifier [0x0x7ff7548f7239+113673]
+	GetHandleVerifier [0x0x7ff7548de298+11368]
+	BaseThreadInitThunk [0x0x7ff8e472e8d7+23]
+	RtlUserThreadStart [0x0x7ff8e5bac40c+44]
+</status>
+</test>
+<status status="FAIL" start="2026-02-23T09:40:01.327046" elapsed="40.358949"/>
+</suite>
+<status status="FAIL" start="2026-02-23T09:39:07.482780" elapsed="94.204505"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="2" fail="1" skip="0">Tests</stat>
+<stat name="Test1" id="s1-s1" pass="1" fail="0" skip="0">Tests.Test1</stat>
+<stat name="Test2" id="s1-s2" pass="1" fail="0" skip="0">Tests.Test2</stat>
+<stat name="Test3" id="s1-s3" pass="0" fail="1" skip="0">Tests.Test3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
