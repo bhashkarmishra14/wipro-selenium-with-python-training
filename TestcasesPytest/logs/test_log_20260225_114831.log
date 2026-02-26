@@ -1,0 +1,12 @@
+2026-02-25 11:48:31,882 - INFO - ====== WebDriver manager ======
+2026-02-25 11:48:33,991 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 11:48:34,559 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 11:48:35,048 - INFO - Driver [C:\Users\bhash\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 11:48:37,183 - INFO - Opening application
+2026-02-25 11:48:47,784 - INFO - Entering the credentials
+2026-02-25 11:48:59,467 - INFO - ====== WebDriver manager ======
+2026-02-25 11:49:00,487 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 11:49:00,911 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 11:49:01,333 - INFO - Driver [C:\Users\bhash\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 11:49:02,599 - INFO - Opening application
+2026-02-25 11:49:14,015 - INFO - Entering the credentials

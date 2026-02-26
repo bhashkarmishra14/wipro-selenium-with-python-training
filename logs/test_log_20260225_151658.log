@@ -1,0 +1,11 @@
+2026-02-25 15:16:58,876 - INFO - ====== WebDriver manager ======
+2026-02-25 15:16:59,971 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 15:17:00,433 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 15:17:00,838 - INFO - Driver [C:\Users\bhash\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 15:17:02,436 - INFO - Opening SauceDemo
+2026-02-25 15:17:16,511 - INFO - Order success
+2026-02-25 15:17:18,829 - INFO - ====== WebDriver manager ======
+2026-02-25 15:17:19,733 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 15:17:20,123 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 15:17:20,529 - INFO - Driver [C:\Users\bhash\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 15:17:21,243 - INFO - Opening SauceDemo

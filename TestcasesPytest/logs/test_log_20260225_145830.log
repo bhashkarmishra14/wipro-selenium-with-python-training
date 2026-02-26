@@ -1,0 +1,12 @@
+2026-02-25 14:58:30,506 - INFO - ====== WebDriver manager ======
+2026-02-25 14:58:31,571 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 14:58:32,036 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 14:58:32,433 - INFO - Driver [C:\Users\bhash\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 14:58:34,070 - INFO - Opening SauceDemo
+2026-02-25 14:58:39,271 - ERROR - Test failed: 'AddtocartPage' object has no attribute 'add_product_to_cart'
+2026-02-25 14:58:39,426 - INFO - Screenshot saved
+2026-02-25 14:58:42,104 - INFO - ====== WebDriver manager ======
+2026-02-25 14:58:43,083 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 14:58:43,491 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 14:58:43,908 - INFO - Driver [C:\Users\bhash\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 14:58:45,342 - INFO - Opening SauceDemo

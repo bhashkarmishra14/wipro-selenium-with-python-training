@@ -1,0 +1,37 @@
+2026-02-25 14:14:21,773 - INFO - ====== WebDriver manager ======
+2026-02-25 14:14:22,702 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 14:14:23,104 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 14:14:23,510 - INFO - Driver [C:\Users\bhash\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 14:14:25,118 - INFO - Opening SauceDemo
+2026-02-25 14:14:42,529 - ERROR - Test failed: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="checkout"]"}
+  (Session info: chrome=138.0.7204.169); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x5bba83+63395]
+	GetHandleVerifier [0x0x5bbac4+63460]
+	(No symbol) [0x0x402113]
+	(No symbol) [0x0x44a85e]
+	(No symbol) [0x0x44abfb]
+	(No symbol) [0x0x492f92]
+	(No symbol) [0x0x46f3f4]
+	(No symbol) [0x0x4907ba]
+	(No symbol) [0x0x46f1a6]
+	(No symbol) [0x0x43e7b2]
+	(No symbol) [0x0x43f654]
+	GetHandleVerifier [0x0x838883+2672035]
+	GetHandleVerifier [0x0x833cba+2652634]
+	GetHandleVerifier [0x0x5e2bca+223466]
+	GetHandleVerifier [0x0x5d2cb8+158168]
+	GetHandleVerifier [0x0x5d978d+185517]
+	GetHandleVerifier [0x0x5c3b78+96408]
+	GetHandleVerifier [0x0x5c3d02+96802]
+	GetHandleVerifier [0x0x5ae90a+9770]
+	BaseThreadInitThunk [0x0x76155d49+25]
+	RtlInitializeExceptionChain [0x0x77bbd83b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77bbd7c1+561]
+
+2026-02-25 14:14:42,703 - INFO - Screenshot saved
+2026-02-25 14:14:45,297 - INFO - ====== WebDriver manager ======
+2026-02-25 14:14:46,218 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 14:14:46,615 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 14:14:47,046 - INFO - Driver [C:\Users\bhash\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 14:14:48,412 - INFO - Opening SauceDemo

@@ -1,0 +1,45 @@
+2026-02-25 12:33:12,223 - INFO - xdist worker is: gw1
+2026-02-25 12:33:12,223 - INFO - ====== WebDriver manager ======
+2026-02-25 12:33:12,223 - INFO - ====== WebDriver manager ======
+2026-02-25 12:33:12,223 - INFO - ====== WebDriver manager ======
+2026-02-25 12:33:14,272 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:14,276 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:14,307 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:15,415 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:15,429 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:15,438 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:16,535 - INFO - There is no [win64] chromedriver "138.0.7204.183" for browser google-chrome "138.0.7204" in cache
+2026-02-25 12:33:16,535 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:16,558 - INFO - There is no [win64] chromedriver "138.0.7204.183" for browser google-chrome "138.0.7204" in cache
+2026-02-25 12:33:16,559 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:16,574 - INFO - There is no [win64] chromedriver "138.0.7204.183" for browser google-chrome "138.0.7204" in cache
+2026-02-25 12:33:16,574 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:18,691 - INFO - WebDriver version 138.0.7204.183 selected
+2026-02-25 12:33:18,698 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2026-02-25 12:33:18,698 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2026-02-25 12:33:18,812 - INFO - WebDriver version 138.0.7204.183 selected
+2026-02-25 12:33:18,812 - INFO - WebDriver version 138.0.7204.183 selected
+2026-02-25 12:33:18,821 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2026-02-25 12:33:18,822 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2026-02-25 12:33:18,822 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2026-02-25 12:33:18,822 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2026-02-25 12:33:19,620 - INFO - Driver downloading response is 200
+2026-02-25 12:33:19,765 - INFO - Driver downloading response is 200
+2026-02-25 12:33:19,793 - INFO - Driver downloading response is 200
+2026-02-25 12:33:23,406 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:24,024 - INFO - Driver has been saved in cache [C:\Users\bhash\.wdm\gw0\drivers\chromedriver\win64\138.0.7204.183]
+2026-02-25 12:33:24,963 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:25,022 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:25,221 - INFO - Opening application
+2026-02-25 12:33:27,502 - INFO - Driver has been saved in cache [C:\Users\bhash\.wdm\gw2\drivers\chromedriver\win64\138.0.7204.183]
+2026-02-25 12:33:27,553 - INFO - Driver has been saved in cache [C:\Users\bhash\.wdm\gw1\drivers\chromedriver\win64\138.0.7204.183]
+2026-02-25 12:33:30,006 - INFO - Opening application
+2026-02-25 12:33:30,018 - INFO - Opening application
+2026-02-25 12:33:31,036 - INFO - Entering the credentials
+2026-02-25 12:33:39,061 - INFO - Entering the credentials
+2026-02-25 12:33:40,867 - INFO - xdist worker is: gw0
+2026-02-25 12:33:40,867 - INFO - ====== WebDriver manager ======
+2026-02-25 12:33:43,044 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:44,420 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 12:33:45,605 - INFO - Driver [C:\Users\bhash\.wdm\gw0\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 12:33:47,387 - INFO - Opening application
